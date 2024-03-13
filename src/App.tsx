@@ -16,7 +16,7 @@ function App() {
             <AppBar/>
 
             <Button colorScheme={'blue'} onClick={handlePrint}>Print</Button>
-            <Center mt={'5rem'}>
+            <Center mt={'3rem'}>
                 <Box width={'210mm'} height={'297mm'} border={'2px dashed'}>
                     <CV ref={cvRef}/>
                 </Box>

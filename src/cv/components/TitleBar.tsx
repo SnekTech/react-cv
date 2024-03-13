@@ -1,12 +1,16 @@
-import { Box, Img } from "@chakra-ui/react";
+import { Box, Flex, Img, Text } from "@chakra-ui/react";
 
 export function TitleBar() {
     return <>
-        <Box bgColor={'brand'} padding={'1rem'}>
+        <Flex bgColor={'brand.500'} padding={'1rem'}>
             <Img src={'portrait-tencent.jpg'}
                  width={'7rem'}
                  clipPath={'circle(50% at 50% 50%)'}
             />
-        </Box>
+            <Box ml={'2rem'} color={'#fff'}>
+                <Text fontSize={'2.3rem'} mb={'0.5rem'}>佘玉非</Text>
+                <Text fontSize={'1.1rem'}>软件工程师</Text>
+            </Box>
+        </Flex>
     </>
 }

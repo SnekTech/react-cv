@@ -12,7 +12,10 @@ const themeConfig: ThemeConfig = {
 const theme = extendTheme({
     config: themeConfig,
     colors: {
-        brand: '#3F51B5'
+        brand: {
+            500: '#3F51B5',
+            50: '#E8EAF6'
+        },
     }
 })
 
