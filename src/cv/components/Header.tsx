@@ -1,6 +1,6 @@
 import { Box, Flex, Img, Text } from "@chakra-ui/react";
 
-export function TitleBar() {
+export function Header() {
     return <>
         <Flex bgColor={'brand.500'} padding={'1rem'}>
             <Img src={'portrait-tencent.jpg'}
