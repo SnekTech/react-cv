@@ -1,9 +1,23 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { ButtonGroup, Flex, Heading, IconButton, useColorMode } from "@chakra-ui/react";
+import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 export function AppBar() {
+    const { colorMode, toggleColorMode } = useColorMode()
+
+    const colorModeIcon = colorMode == 'dark' ?
+        <MdLightMode/> : <MdDarkMode/>
+
     return <>
-        <Box bgColor={'darkcyan'} padding={'1rem'}>
+        <Flex bgColor={'darkcyan'} padding={'1rem'}>
             <Heading>React CV</Heading>
-        </Box>
+            <ButtonGroup ml={'auto'}>
+                <IconButton
+                    colorScheme={'teal'}
+                    aria-label={'toggle color mode'}
+                    onClick={toggleColorMode}
+                    icon={colorModeIcon}
+                />
+            </ButtonGroup>
+        </Flex>
     </>
 }
