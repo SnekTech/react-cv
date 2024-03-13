@@ -1,4 +1,3 @@
-import './App.css'
 import { Box, Button, Center } from "@chakra-ui/react";
 import { CV } from "./cv/CV.tsx";
 import { AppBar } from "./layout/AppBar.tsx";
