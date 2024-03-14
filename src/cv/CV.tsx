@@ -4,6 +4,7 @@ import { Box, Flex } from "@chakra-ui/react";
 import { UnderlinedTitle } from "./components/UnderlinedTitle.tsx";
 import { Contact } from "./components/Contact.tsx";
 import { Skills } from "./components/Skills.tsx";
+import { LanguageSkill } from "./components/LanguageSkill.tsx";
 
 export const CV = forwardRef<HTMLDivElement>((_, ref) => {
     return <Flex ref={ref} height={'100%'} flexDir={'column'}>
@@ -16,9 +17,10 @@ export const CV = forwardRef<HTMLDivElement>((_, ref) => {
                 <UnderlinedTitle title={'教育经历'}/>
             </Box>
 
-            <Box width={'240px'} bgColor={'brand.50'} padding={'0.7rem'}>
+            <Box height={'100%'} width={'240px'} bgColor={'brand.50'} padding={'0.7rem'}>
                 <Contact/>
                 <Skills/>
+                <LanguageSkill/>
             </Box>
         </Flex>
     </Flex>
