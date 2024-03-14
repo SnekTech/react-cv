@@ -1,5 +1,6 @@
 import { UnderlinedTitle } from "./UnderlinedTitle.tsx";
-import { ListItem, UnorderedList } from "@chakra-ui/react";
+import { List, ListIcon, ListItem } from "@chakra-ui/react";
+import { MdCheckCircle } from "react-icons/md";
 
 const EnglishSkills = [
     "CET-6（507分）和 CET-4（604分）裸考一次通过",
@@ -11,10 +12,13 @@ const EnglishSkills = [
 export function LanguageSkill() {
     return <>
         <UnderlinedTitle title={'英语水平'}/>
-        <UnorderedList>
+        <List spacing={2}>
             {EnglishSkills.map((skill, i) => (
-                <ListItem key={i}>{skill}</ListItem>
+                <ListItem key={i}>
+                    <ListIcon as={MdCheckCircle} color={'brand.500'}/>
+                    {skill}
+                </ListItem>
             ))}
-        </UnorderedList>
+        </List>
     </>
 }

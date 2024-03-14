@@ -1,5 +1,5 @@
 import { UnderlinedTitle } from "./UnderlinedTitle.tsx";
-import { Flex, Heading, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+import { Flex, Heading, List, ListItem, Text } from "@chakra-ui/react";
 
 type ContactItem = {
     name: string
@@ -28,7 +28,7 @@ const syfContacts: ContactItem[] = [
 export const Contact = () => (
     <>
         <UnderlinedTitle title={'联系方式'}/>
-        <UnorderedList listStyleType={'none'} margin={'0'}>
+        <List>
             {syfContacts.map(contact => (
 
                 <ListItem key={contact.name}>
@@ -38,6 +38,6 @@ export const Contact = () => (
                     </Flex>
                 </ListItem>
             ))}
-        </UnorderedList>
+        </List>
     </>
 )

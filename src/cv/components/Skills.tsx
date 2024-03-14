@@ -1,6 +1,6 @@
 import { Rating, RatingScore } from "./Rating.tsx";
 import { UnderlinedTitle } from "./UnderlinedTitle.tsx";
-import { Flex, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+import { Flex, List, ListItem, Text } from "@chakra-ui/react";
 
 type Skill = {
     name: string,
@@ -25,7 +25,7 @@ const syfSkills: Skill[] = [
 export function Skills() {
     return <>
         <UnderlinedTitle title={'技能'}/>
-        <UnorderedList listStyleType={'none'} margin={0}>
+        <List>
             {syfSkills.map(skill => (
                 <ListItem key={skill.name}>
                     <Flex>
@@ -34,6 +34,6 @@ export function Skills() {
                     </Flex>
                 </ListItem>
             ))}
-        </UnorderedList>
+        </List>
     </>
 }
