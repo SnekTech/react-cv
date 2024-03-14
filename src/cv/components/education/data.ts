@@ -16,7 +16,7 @@ export const syfEducationItems: EducationExperience[] = [
         university: "中国科学技术大学",
         dateRange: {
             from: '2020年09月',
-            to: '2023年06月'
+            to: '2024年06月'
         },
         city: "苏州",
         major: "软件工程",
