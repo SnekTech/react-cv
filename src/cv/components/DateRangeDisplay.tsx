@@ -11,7 +11,7 @@ interface DateRangeDisPlayProps {
 
 export function DateRangeDisplay({range}: DateRangeDisPlayProps) {
     return (
-        <Flex flexDir={'column'}>
+        <Flex flexDir={'column'} flexShrink={0}>
             <Text>{range.from} ~</Text>
             <Text>{range.to}</Text>
         </Flex>

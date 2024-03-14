@@ -1,6 +1,6 @@
 import { EducationExperience } from "./data.ts";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
-import { DateRangeDisplay } from "./DateRangeDisplay.tsx";
+import { DateRangeDisplay } from "../DateRangeDisplay.tsx";
 
 export function EducationItem({ experience: {
     dateRange,

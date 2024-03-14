@@ -1,4 +1,4 @@
-import { DateRange } from "./DateRangeDisplay.tsx";
+import { DateRange } from "../DateRangeDisplay.tsx";
 
 export type EducationExperience = {
     university: '云南大学' | '中国科学技术大学' | string,
