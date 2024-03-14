@@ -10,12 +10,11 @@ export function EducationItem({ experience: {
     major,
     GPA
 } }: { experience: EducationExperience }) {
-    return <Flex>
+    return <Flex mb={'1rem'}>
         <DateRangeDisplay range={dateRange}/>
         <Box ml={'2rem'}>
             <Heading size={'sm'}>{university}</Heading>
-            <Text>{degree}-{school}-{major}</Text>
-            <Text>{GPA}</Text>
+            <Text>{degree}-{school}-{major} GPA: {GPA}</Text>
         </Box>
     </Flex>
 }

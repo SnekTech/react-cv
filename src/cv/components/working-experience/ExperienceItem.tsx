@@ -13,13 +13,13 @@ export function ExperienceItem({ experience }: { experience: Experience }) {
         keywords,
         points
     } = experience
-    return <Flex>
+    return <Flex mb={'1rem'}>
         <DateRangeDisplay range={dateRange}/>
-        <Box ml={'2rem'}>
+        <Box ml={'1rem'}>
             <Text fontWeight={'bold'} fontSize={'large'}>{company}</Text>
-            <Text fontStyle={'italic'} fontSize={'small'}>{job}-{department}</Text>
+            <Text fontStyle={'italic'} fontSize={'0.9rem'}>{job}-{department}</Text>
             <Keywords keywords={keywords}/>
-            <List>
+            <List fontSize={'0.9rem'} spacing={1}>
                 {points.map((point, i) => (
                     <ListItem key={i}>
                         <ListIcon as={MdCheckCircle} color={'brand.500'}/>

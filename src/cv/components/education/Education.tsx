@@ -6,7 +6,7 @@ import { EducationItem } from "./EducationItem.tsx";
 export function Education() {
     return <Box>
         <UnderlinedTitle title={'教育经历'}/>
-        <List spacing={2}>
+        <List>
             {syfEducationItems.map((experience, i) => (
                 <ListItem key={i}>
                     <EducationItem experience={experience}/>
