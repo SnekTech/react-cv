@@ -2,6 +2,7 @@ import { Header } from "./components/Header.tsx";
 import { forwardRef } from "react";
 import { Box, Flex } from "@chakra-ui/react";
 import { UnderlinedTitle } from "./components/UnderlinedTitle.tsx";
+import { Contact } from "./components/Contact.tsx";
 
 export const CV = forwardRef<HTMLDivElement>((_, ref) => {
     return <div ref={ref} style={{ height: '100%' }}>
@@ -15,7 +16,8 @@ export const CV = forwardRef<HTMLDivElement>((_, ref) => {
                     <UnderlinedTitle title={'教育经历'}/>
                 </Box>
 
-                <Box width={'240px'} bgColor={'brand.50'}>
+                <Box width={'240px'} bgColor={'brand.50'} padding={'0.7rem'}>
+                    <Contact/>
                 </Box>
             </Flex>
         </Flex>
