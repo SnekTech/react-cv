@@ -13,10 +13,10 @@ export function ExperienceItem({ experience }: { experience: Experience }) {
         keywords,
         points
     } = experience
-    return <Flex mb={'1rem'}>
+    return <Flex>
         <DateRangeDisplay range={dateRange}/>
         <Box ml={'1rem'}>
-            <Text fontWeight={'bold'} fontSize={'large'}>{company}</Text>
+            <Text fontWeight={'bold'} fontSize={'1.1rem'}>{company}</Text>
             <Text fontStyle={'italic'} fontSize={'0.9rem'}>{job}-{department}</Text>
             <Keywords keywords={keywords}/>
             <List fontSize={'0.9rem'} spacing={1}>

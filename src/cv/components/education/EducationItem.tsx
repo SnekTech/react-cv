@@ -1,5 +1,5 @@
 import { EducationExperience } from "./data.ts";
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { DateRangeDisplay } from "../DateRangeDisplay.tsx";
 
 export function EducationItem({ experience: {
@@ -10,10 +10,10 @@ export function EducationItem({ experience: {
     major,
     GPA
 } }: { experience: EducationExperience }) {
-    return <Flex mb={'1rem'}>
+    return <Flex>
         <DateRangeDisplay range={dateRange}/>
-        <Box ml={'2rem'}>
-            <Heading size={'sm'}>{university}</Heading>
+        <Box ml={'1rem'}>
+            <Text fontWeight={'bold'} fontSize={'1.1rem'}>{university}</Text>
             <Text>{degree}-{school}-{major} GPA: {GPA}</Text>
         </Box>
     </Flex>

@@ -13,7 +13,7 @@ export function Rating({ rating }: Props) {
 
     return <div>
         {[...Array(MaxScore)].map((_, i) =>
-            (<Icon
+            (<Icon key={i}
                 as={i < rating ? FaStar : FaRegStar}
                 color={'brand.500'}/>))}
     </div>

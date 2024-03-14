@@ -6,6 +6,7 @@ import { Skills } from "./components/Skills.tsx";
 import { LanguageSkill } from "./components/LanguageSkill.tsx";
 import { Education } from "./components/education/Education.tsx";
 import { WorkingExperience } from "./components/working-experience/WorkingExperience.tsx";
+import { Projects } from "./components/projects/Projects.tsx";
 
 export const CV = forwardRef<HTMLDivElement>((_, ref) => {
     return <Flex ref={ref} height={'100%'} flexDir={'column'}>
@@ -17,9 +18,10 @@ export const CV = forwardRef<HTMLDivElement>((_, ref) => {
             <Box flexGrow={1} padding={'0.7rem'}>
                 <Education/>
                 <WorkingExperience/>
+                <Projects/>
             </Box>
 
-            <Box height={'100%'} width={'240px'} bgColor={'brand.50'} padding={'0.7rem'}
+            <Box width={'240px'} bgColor={'brand.50'} padding={'0.7rem'}
                  flexShrink={0}
             >
                 <Contact/>
