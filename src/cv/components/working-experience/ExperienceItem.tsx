@@ -2,6 +2,7 @@ import { Experience } from "./data.ts";
 import { Box, Flex, List, ListIcon, ListItem, Text } from "@chakra-ui/react";
 import { DateRangeDisplay } from "../DateRangeDisplay.tsx";
 import { MdCheckCircle } from "react-icons/md";
+import { Keywords } from "../Keywords.tsx";
 
 export function ExperienceItem({ experience }: { experience: Experience }) {
     const {
@@ -9,6 +10,7 @@ export function ExperienceItem({ experience }: { experience: Experience }) {
         company,
         job,
         department,
+        keywords,
         points
     } = experience
     return <Flex>
@@ -16,7 +18,7 @@ export function ExperienceItem({ experience }: { experience: Experience }) {
         <Box ml={'2rem'}>
             <Text fontWeight={'bold'} fontSize={'large'}>{company}</Text>
             <Text fontStyle={'italic'} fontSize={'small'}>{job}-{department}</Text>
-
+            <Keywords keywords={keywords}/>
             <List>
                 {points.map((point, i) => (
                     <ListItem key={i}>

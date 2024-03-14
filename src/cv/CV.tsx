@@ -19,7 +19,9 @@ export const CV = forwardRef<HTMLDivElement>((_, ref) => {
                 <WorkingExperience/>
             </Box>
 
-            <Box height={'100%'} width={'240px'} bgColor={'brand.50'} padding={'0.7rem'}>
+            <Box height={'100%'} width={'240px'} bgColor={'brand.50'} padding={'0.7rem'}
+                 flexShrink={0}
+            >
                 <Contact/>
                 <Skills/>
                 <LanguageSkill/>
